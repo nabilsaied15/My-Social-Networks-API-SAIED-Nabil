@@ -1,4 +1,3 @@
-
 import mongoose from 'mongoose';
 const eventSchema = new mongoose.Schema({
   title: {
@@ -19,6 +18,10 @@ const eventSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  shoppingListEnabled: {
+    type: Boolean,
+    default: false,
+  },
   organizers: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
@@ -27,7 +30,8 @@ const eventSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   }],
-}, {
+}, 
+{
   timestamps: true,
 });
 

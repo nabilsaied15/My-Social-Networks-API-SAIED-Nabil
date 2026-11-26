@@ -97,6 +97,7 @@ const Events = {
         'location',
         'organizers',
         'participants',
+        'shoppingListEnabled',
       ];
 
       allowedFields.forEach((field) => {
