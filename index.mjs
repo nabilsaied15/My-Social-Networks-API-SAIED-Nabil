@@ -6,6 +6,7 @@ import usersRouter from './routes/users.mjs';
 import eventsRouter from './routes/events.mjs';
 import groupsRouter from './routes/groups.mjs';
 import discussionsRouter from './routes/discussions.mjs';
+import albumsRouter from './routes/albums.mjs';
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use('/users', usersRouter);
 app.use('/events', eventsRouter);
 app.use('/groups', groupsRouter);
 app.use('/discussions', discussionsRouter);
+app.use('/albums', albumsRouter);
 
 const PORT = process.env.PORT || 3000;
 
