@@ -8,6 +8,7 @@ import groupsRouter from './routes/groups.mjs';
 import discussionsRouter from './routes/discussions.mjs';
 import albumsRouter from './routes/albums.mjs';
 import sondagesRouter from './routes/sondages.mjs';
+import billetterieRouter from './routes/billetterie.mjs';
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.use('/groups', groupsRouter);
 app.use('/discussions', discussionsRouter);
 app.use('/albums', albumsRouter);
 app.use('/sondages', sondagesRouter);
+app.use('/billetterie', billetterieRouter);
 
 const PORT = process.env.PORT || 3000;
 
