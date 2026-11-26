@@ -5,6 +5,7 @@ import connectDB from './config/database.mjs';
 import usersRouter from './routes/users.mjs';
 import eventsRouter from './routes/events.mjs';
 import groupsRouter from './routes/groups.mjs';
+import discussionsRouter from './routes/discussions.mjs';
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.get('/', (req, res) => {
 app.use('/users', usersRouter);
 app.use('/events', eventsRouter);
 app.use('/groups', groupsRouter);
+app.use('/discussions', discussionsRouter);
 
 const PORT = process.env.PORT || 3000;
 
